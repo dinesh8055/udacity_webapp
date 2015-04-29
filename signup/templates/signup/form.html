@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Sign Up</title>
+</head>
+<body>
+
+<form method='post' action='/signup/'>
+    {% csrf_token %}
+    <table>
+        <tr><td colspan='3'><h2>Signup</h2></td></tr>
+        <tr><td style="text-align:right;">Username</td><td><input name="user_name" value="{{name}}"></td><td>{{name_error}}</td></tr>
+        <tr><td style="text-align:right;">Password</td><td><input type="password" name="password"></td><td>{{password_error}}</td></tr>
+        <tr><td style="text-align:right;">Verify Password</td><td><input type="password" name="verify_password"></td><td>{{password_mismatch}}</td></tr>
+        <tr><td style="text-align:right;">Email(optional)</td><td><input name="email" value="{{email}}"></td><td>{{email_error}}</td></tr>
+        <tr><td><input type="submit"></td></tr>
+    </table>
+</form>
+</body>
+</html>

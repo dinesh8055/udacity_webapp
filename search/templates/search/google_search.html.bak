@@ -1,0 +1,16 @@
+<form action="/testform">
+    <b><strong><i>Date of Birth</b></strong></i>
+	<label>
+	Day
+		<input name="day">
+	</label>
+	<label>
+	Month
+		<input name="month">
+	</label>
+	<label>
+	Year
+		<input name="year">
+	</label>
+	<input type="submit">
+</form>

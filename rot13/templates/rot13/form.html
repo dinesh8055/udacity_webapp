@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>
+Unit 2 Rot13
+</title>
+</head>
+<body>
+<form method="POST" action="/unit2/rot13/">
+	{% csrf_token %}
+	<h2>Enter some text to ROT13:</h2>
+	<textarea rows="5" cols="60" name="txt">{{t}}</textarea><br>
+	<input type="submit">
+</form>
+</body>
+</html>
